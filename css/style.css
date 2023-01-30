@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #efefef;
+  font-family: Georgia;
+  background: #0f0f0f;
+}
+.container
+{
+  width: 100%;
+
+}
+.header
+{
+  height: 60px;
+  background:#276e90 ;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 0.7rem;
+}
+.header .logo a
+{
+  color: #0a3143;
+  text-decoration: none;
+}
+.header .title
+{
+  color:#cecfc9 ;
+  font-size:1.5rem;
+}
+.menu_mobil
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1.7rem;
+  height: 40px;
+  cursor: pointer;
+}
+.bar
+{
+  width: 100%;
+  height: 5px;
+  position: relative;
+  color: #000 ;
+  margin-top: 4px;
+  transition :transform 0.4s;
+
+}
+.bar::after
+{
+  content: "";
+  position: absolute;
+  background :#cecfc9 ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:4px;
+  border-radius: 3px;
+}
+.bar_transform1
+{
+  transform: rotate(55deg);
+}
+.bar_transform2
+{
+  transform: translate(0,-10px) rotate(-55deg);
+}
+.bar_hidden
+{
+  display: none;
+}
+
+.navegation
+{
+  padding: 1rem;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 10rem;
+  transform: translate(-100%);
+  background: rgba(15, 15, 15, 0.962);
+  transition: transform 0.4s;
+}
+.menu
+{
+  display: flex;
+  flex-direction: column;
+}
+.menu li
+{
+  list-style: none;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+.menu li a
+{
+  display: block;
+  color: #cecfc9 ;
+  padding:0.4rem 0.7rem;
+  text-decoration: none ;
+  /* background: #276e90 ; */
+  border-radius: 0.4rem;
+  text-align: center;
+  transition: background 0.3s ease-in;
+}
+.menu li a:hover{
+  background: #276e90 ;
+}
+.menu_visible
+{
+  transition: transform 0.4s;
+  transform: translate(0);
+}
+.movies
+{
+  min-width: 424px;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  place-content: center;
+  gap: 0.4rem;
+}
+.movie
+{
+  width: 150px;
+  height: max-content;
+  margin: 0;
+  padding: 0;
+  border: 2px solid red;
+  border-radius: 5%;
+  overflow: hidden;
+}
+.poster
+{
+  object-fit: cover;
+  width:100%;
+  height: 220px;
+}
+.info
+{
+  width: 100%;
+  padding:0.2rem;
+  color: #Fff;
+}
+.card
+{
+  width: 150px;
+}
