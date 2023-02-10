@@ -4,7 +4,10 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <title>Peliculas</title>
   <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -25,28 +28,35 @@
 
   <nav class="navegation">
     <ul class="menu">
-      <li><a href="#">Inicio</a></li>
-
-      <li><a href="#">Categorías</a>
-        <ul class="dropdown">
-          <li><a href="#">Acción</a></li>
-          <li><a href="#">Comedia</a></li>
-          <li><a href="#">Ciencia Ficción </a></li>
-          <li><a href="#">Drama</a></li>
-          <li><a href="#">Romance</a></li>
-          <li><a href="#">Terror</a></li>
-          <li><a href="#" class="next">siguiente</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#">Nuevas</a></li>
-
+      <li><a href="#" id="popular" class="genre">Populars</a></li>
+      <li><a href="#" id="latest" class="genre">Latest</a></li>
+      <li><a href="#" id="now_playing" class="genre">Now Playing</a></li>
+      <li><a href="#" id="top_rated" class="genre">Top Rated</a></li>
+      <li><a href="#" id="upcoming" class="genre">Upcoming</a></li>
     </ul>
 
   </nav>
-  <section class="movies">
+  <form class="form">
+    <label for="search">Search</label>
+    <input type="text" class="search" id="search">
+  </form>
+  <div class="movies-container">
+  </div>
 
-  </section>
+
+  <div class="pagination">
+    <div class="prev">
+      <i class="fa-solid fa-circle-arrow-left"></i>
+    </div>
+    <div class="counter">
+      <span class="currentpage"></span>
+      <span>of</span>
+      <span class="lastpage"></span>
+    </div>
+    <div class="next">
+      <i class="fa-solid fa-circle-arrow-right"></i>
+    </div>
+  </div>
 
   <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 </body>
