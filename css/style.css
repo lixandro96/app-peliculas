@@ -284,7 +284,6 @@ body{
   font-size: 1.4rem;
 }
 .form{
-   position: relative;
-  top: 70px;
+   margin-top:80px;
 }
 }
