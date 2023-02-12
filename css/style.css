@@ -147,6 +147,10 @@ body{
   outline: none;
   background-color: transparent;
 }
+.movies-container{
+  max-width: 1440px;
+  min-width: 424px  
+}
 .movies
 {
   min-width: 424px;
